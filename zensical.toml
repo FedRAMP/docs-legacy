@@ -49,6 +49,8 @@ nav = [
     { "--> go to Consolidated Rules for 2026" = "/2026" },
     { "--> return to FedRAMP.gov" = "/" },
 ]
+extra_javascript = ["https://www.fedramp.gov/javascripts/dap.js"]
+copyright = "fedramp.gov"
 
 [project.extra]
 homepage = "/legacy"
@@ -58,7 +60,7 @@ social_image_alt = "FedRAMP Legacy Documentation Reference"
 
 [project.extra.analytics]
 provider = "google"
-property = "G-HBYXWFP794"
+property = "G-E1PPDRDY5R"
 
 [project.extra.analytics.feedback]
 title = "Was this page helpful?"
