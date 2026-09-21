@@ -49,7 +49,7 @@ nav = [
     { "--> go to Consolidated Rules for 2026" = "/2026" },
     { "--> return to FedRAMP.gov" = "/" },
 ]
-extra_javascript = ["https://www.fedramp.gov/javascripts/dap.js"]
+extra_javascript = ["https://www.fedramp.gov/javascripts/dap.js"]    # Shim for Digital Analytics Program (DAP)
 copyright = "fedramp.gov"
 
 [project.extra]
