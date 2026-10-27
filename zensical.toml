@@ -171,4 +171,3 @@ enabled = true
 feed_title = "FedRAMP 20x Phase 4 Changelog"
 match_path = "^changelog(?:/|$)"
 length = 1
-abstract_chars_count = 1024

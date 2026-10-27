@@ -2,6 +2,8 @@
 
 This page contains summaries of changes that are made to the Legacy section of this site.
 
+An [RSS feed for this page is available here](https://www.fedramp.gov/legacy/feed_rss_updated.xml).
+
 ## 2026-10-27 Updating static site version and testing RSS feed support
 
 This version makes no changes to the materials on the site itself and is purely for convenience and testing:
