@@ -168,6 +168,7 @@ logo = "overrides/assets/secondary_logo.png"
 
 [project.plugins.rss]
 enabled = true
-feed_title = "FedRAMP 20x Phase 4 Changelog"
-match_path = "^changelog(?:/|$)"
+feed_title = "FedRAMP Legacy Documentation Changelog"
+match_path = "^changelog\\.md$"
 length = 1
+abstract_chars_count = 4096
