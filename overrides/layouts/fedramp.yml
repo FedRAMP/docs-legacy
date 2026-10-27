@@ -1,0 +1,41 @@
+definitions:
+  - &page_title >-
+    {{ page.meta.get("title", page.title) }}
+  - &page_description >-
+    {{ page.meta.get("description", config.site_description) or "" }}
+
+size: { width: 1200, height: 630 }
+layers:
+  - background:
+      color: "#ffffff"
+  - size: { width: 197, height: 144 }
+    offset: { x: 939, y: 64 }
+    background:
+      image: "{{ layout.logo }}"
+  - size: { width: 832, height: 42 }
+    offset: { x: 64, y: 64 }
+    typography:
+      content: "{{ config.site_name }}"
+      color: "#000000"
+      font:
+        style: Bold
+  - size: { width: 832, height: 234 }
+    offset: { x: 64, y: 256 }
+    typography:
+      content: *page_title
+      align: start
+      color: "#000000"
+      line:
+        amount: 3
+        height: 1.25
+      font:
+        style: Bold
+  - size: { width: 832, height: 64 }
+    offset: { x: 64, y: 512 }
+    typography:
+      content: *page_description
+      align: start
+      color: "#000000"
+      line:
+        amount: 2
+        height: 1.5

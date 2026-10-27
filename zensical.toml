@@ -11,6 +11,7 @@ repo_name = "FedRAMP/docs-legacy"
 nav = [
     { "Legacy FedRAMP Documentation Reference" = [
         "index.md",
+        { "Changelog" = "changelog.md"},
         { "Cloud Service Providers" = [
             "playbook/csp/index.md",
             { "Getting Started" = [
@@ -154,3 +155,20 @@ alternate_style = true
 [project.markdown_extensions.pymdownx.emoji]
 emoji_index = "zensical.extensions.emoji.twemoji"
 emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.plugins.social]
+enabled = true
+cards_layout = "fedramp"
+cards_layout_dir = "overrides/layouts"
+
+[project.plugins.social.cards_layout_options]
+background_color = "#f4f6f8"
+color = "#162e51"
+logo = "overrides/assets/secondary_logo.png"
+
+[project.plugins.rss]
+enabled = true
+feed_title = "FedRAMP 20x Phase 4 Changelog"
+match_path = "^changelog(?:/|$)"
+length = 1
+abstract_chars_count = 1024
