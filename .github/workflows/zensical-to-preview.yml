@@ -1,0 +1,17 @@
+# Deploys Zensical site to GitHub Pages using the FedRAMP shared workflow
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  site:
+    uses: FedRAMP/shared-workflows/.github/workflows/build-fr-zensical.yml@v1
