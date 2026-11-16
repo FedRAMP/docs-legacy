@@ -1,0 +1,10 @@
+{# Preserve Zensical's configured logo and icon fallback; switch images via theme CSS. #}
+{% if config.theme.logo %}
+  <img class="theme-logo--light" src="{{ config.theme.logo | url }}" alt="{{ config.site_name }}">
+  {% if config.extra.dark_logo %}
+    <img class="theme-logo--dark" src="{{ config.extra.dark_logo | url }}" alt="{{ config.site_name }}">
+  {% endif %}
+{% else %}
+  {% set icon = config.theme.icon.logo or "material/library" %}
+  {% include ".icons/" ~ icon ~ ".svg" %}
+{% endif %}

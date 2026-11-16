@@ -82,6 +82,7 @@ note = "Thanks for your feedback!"
 [project.theme]
 custom_dir = "overrides"
 logo = "assets/secondary_logo.png"
+favicon = "assets/favicon.svg"
 language = "en"
 features = [
   "announce.dismiss",
@@ -98,7 +99,7 @@ features = [
   "navigation.instant.prefetch",
   "navigation.instant.progress",
   "navigation.path",
-  "navigation.prune",
+  #"navigation.prune",
   "navigation.sections",
   "navigation.tabs",
   "navigation.tabs.sticky",
